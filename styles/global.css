@@ -19,7 +19,7 @@ body {
 }
 
 .main-container {
-  margin: 48px 156px 0 156px;
+  margin: 48px 156px;
 }
 
 body::-webkit-scrollbar {
@@ -43,6 +43,10 @@ a {
     color: #AC987A;
 }
 
+.text-dark-brown {
+  color: #411A03;
+}
+
 .text-b {
     font-weight: 700;
 }
@@ -61,19 +65,19 @@ a {
 
 @media only screen and (width <= 1240px) {
   .main-container {
-    margin: 48px 24px 0 24px;
+    margin: 48px 24px;
   }
 }
 
 @media only screen and (width <= 904px) {
   .main-container {
-    margin: 48px 32px 0 32px;
+    margin: 48px 32px;
   }
 }
 
 @media only screen and (width <= 600px) {
   .main-container {
-    margin: 48px 16px 0 16px;
+    margin: 48px 16px;
   }
 }
 
