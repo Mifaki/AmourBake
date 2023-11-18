@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/header-footer.css" />
+    <link rel="stylesheet" href="./styles/auth.css" />
   </head>
   <body>
     <header>
@@ -33,7 +34,7 @@
           <!-- <div class= "header-btn-container">
                 <a href="./login.html" class="text-lh header-btn">Sign In</a>
                 <a href="./register.html" class="text-lh header-btn">Sign Up</a>
-              </div> -->
+            </div> -->
           <div class="user-container">
             <p class="text-b text-cream">Jennifer Shakila</p>
             <img src="./assets/avatar.png" alt="avatar" class="header-img" />
@@ -49,64 +50,54 @@
       </div>
     </header>
     <main class="main-container">
-      <p>Hello AmourBake</p>
-    </main>
-    <footer>
-      <div class="top-footer">
-        <p class="text-b text-cream">
-          "Interested in learning more? Contact our team today!"
-        </p>
-        <a href="" class="text-lh footer-btn">Contact Us</a>
-      </div>
-      <div class="bottom-footer">
-        <div class="footer-section-container">
-          <div class="footer-left">
+      <div class="auth-container-center">
+        <div class="auth-container">
+          <p class="auth-title text-dark-brown text-b">Sign Up</p>
+          <form class="auth-form">
             <div>
-              <div class="media-container">
-                <img
-                  src="./assets/instagram-footer.png"
-                  alt="Instagram Icon"
-                  class="media-icon"
-                />
-                <img
-                  src="./assets/facebook-footer.png"
-                  alt="Facebook Icon"
-                  class="media-icon"
-                />
-                <img
-                  src="./assets/tiktok-footer.png"
-                  alt="TikTok Icon"
-                  class="media-icon"
-                />
-                <img
-                  src="./assets/youtube-footer.png"
-                  alt="Youtube Icon"
-                  class="media-icon"
+              <label for="name" class="text-b text-dark-brown">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your full name"
+                required
+              />
+            </div>
+            <div>
+                <label for="email" class="text-b text-dark-brown">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email address"
+                  required
                 />
               </div>
-              <p>JAKARTA - MALANG - SURABAYA</p>
+            <div>
+              <label for="password" class="text-b text-dark-brown">Password</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                required
+              />
             </div>
-            <p>amourbake123@gmail.com</p>
-          </div>
-          <div class="footer-right">
-            <p class="text-b">Company</p>
-            <div class="footer-right-item">
-              <p>Home</p>
-              <p>About Us</p>
-              <p>Contact Us</p>
-            </div>
-          </div>
-          <div class="footer-right">
-            <p class="text-b">Community</p>
-            <div class="footer-right-item">
-              <p>Whatsapp</p>
-              <p>Discord</p>
-            </div>
-          </div>
+            <div>
+                <label for="phoneNumber" class="text-b text-dark-brown">Phone Number</label>
+                <input
+                  type="text"
+                  id="phoneNumber"
+                  name="phoneNumber"
+                  placeholder="Enter your Phone Number"
+                  required
+                />
+              </div>
+            <button type="submit" class="text-b">Sign Up</button>
+          </form>
         </div>
-        <div class="footer-divider"></div>
-        <p class="privacy-text">Privacy Policy</p>
       </div>
-    </footer>
+    </main>
   </body>
 </html>
