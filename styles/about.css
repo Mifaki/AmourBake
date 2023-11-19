@@ -1,0 +1,59 @@
+.about-gap {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-container > img {
+  width: 612px;
+  height: 780px;
+}
+
+.about-container > div > h1 {
+    font-size: 32px;
+    max-width: fit-content;
+    margin-bottom: 44px;
+}
+
+.about-text {
+  max-width: 528px;
+  text-align: justify;
+}
+
+section > h1 {
+  font-size: 42px;
+  text-align: center;
+}
+
+.partners-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 42px;
+}
+
+.management-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 42px;
+}
+
+.management-card {
+  flex: 0 1 calc(30% - 20px); 
+  max-width: calc(30% - 20px);
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  gap: 18px;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 72px;
+}
