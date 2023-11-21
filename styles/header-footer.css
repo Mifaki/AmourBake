@@ -15,9 +15,10 @@ header {
 }
 
 .header-img {
-  width: 70px;
-  height: 70px;
+  width: 58px;
+  height: 58px;
   aspect-ratio: 1/1;
+  padding-bottom: 8px;
 }
 
 .header-logo-container {

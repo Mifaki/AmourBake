@@ -1,5 +1,3 @@
-// community.js
-
 document.addEventListener("DOMContentLoaded", function () {
     const imageGridSection = document.getElementById("imageGridSection");
     const imageBtn = document.querySelector(".image-btn");

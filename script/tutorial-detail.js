@@ -37,6 +37,10 @@ recipeData = [
   },
 ];
 
+function redirectToDetail() {
+  window.location.href = `/tutorial-detail.html`;
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   const cardContainer = document.getElementById("cardContainer");
 
@@ -45,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     data.forEach((item) => {
       const cardHtml = `
-            <div class="card">
+            <div class="card" data-id="${item.id}" onclick="redirectToDetail()">
               <img src="${item.thumbnail}.jpg" alt="${item.title}">
               <div class="card-text-container">
                 <h1>${item.title}</h1>
