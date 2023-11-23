@@ -17,3 +17,18 @@ document.addEventListener("DOMContentLoaded", function () {
     buttonContaienr.style.display = "flex";
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const userData = localStorage.getItem("userData");
+  const notLoggedInElements = document.getElementsByClassName("notLoggedIn");
+  const loggedIn = document.getElementById("loggedIn");
+
+  if (userData) {
+    const notLoggedInArray = [...notLoggedInElements];
+    notLoggedInArray.forEach(data => {
+      data.style.display = "none";
+    });
+  } else {
+    loggedIn.style.display = "none";
+  }
+});
