@@ -9,7 +9,13 @@
   padding: 48px 156px;
 }
 
+.banner > img {
+  max-width: 200px;
+  width: 20%;
+}
+
 .banner-text {
+  width: 80&;
   display: flex;
   flex-direction: column;
   gap: 26px;
@@ -126,7 +132,8 @@
   padding-left: 1em;
   text-indent: -1em;
 }
-/* Responsive */
+
+/* Responsive Styles */
 @media only screen and (width <= 1240px) {
   .banner {
     padding: 48px 24px;
@@ -137,10 +144,80 @@
   .banner {
     padding: 48px 32px;
   }
+
+  .banner-text > div > h2 {
+    font-size: 18px;
+  }
+
+  .banner-text > div > h3 {
+    font-size: 16px;
+  }
+
+  .icon-text > p {
+    font-size: 14px;
+  }
+
+  .course-detail-top {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .top-left {
+    min-width: 100%;
+  }
+
+  .top-right {
+    min-width: 100%;
+  }
+
+  .detail-body {
+    width: 100%;
+  }
 }
 
 @media only screen and (width <= 600px) {
   .banner {
     padding: 48px 16px;
   }
+
+  .banner > img {
+    display: none
+  }
+
+  .top-left > h2 {
+    font-size: 18px;
+  }
+
+  ul {
+    font-size: 14px;
+  }
+
+  .top-right > h2 {
+    font-size: 18px;
+  }
 }
+
+@media only screen and (width <= 420px) {
+  .top-left > h2 {
+    text-align: center;
+  }
+
+  .price-container > h3,
+  .price-container > p {
+    font-size: 14px;
+  }
+
+  .buy-btn {
+    padding: 14px 32px;
+    font-size: 14px;
+  }
+
+  .detail-body > div > h2 {
+    font-size: 18px;
+  }
+
+  .detail-body > div > p {
+    font-size: 14px;
+  }
+}
+
