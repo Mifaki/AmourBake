@@ -165,3 +165,166 @@
   box-shadow: 0px 4px 4px 0px #411a03;
   cursor: pointer;
 }
+
+/* Responsive Styles */
+@media only screen and (width <= 900px) {
+  .community-top {
+    padding: 24px 42px;
+  }
+
+  .community-card {
+    padding: 14px 52px;
+  }
+
+  .community-title > img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .community-title > h3 {
+    font-size: 16px;
+  }
+
+  .topic-content,
+  .topic-reply-container {
+    padding: 24px 64px;
+  }
+}
+
+@media only screen and (width <= 600px) {
+  .top-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .top-row > img:not(.top-img),
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .top-row > h2 {
+    font-size: 18px;
+  }
+
+  .bottom-item {
+    font-size: 12px;
+  }
+
+  .community-card {
+    padding: 14px 24px;
+  }
+
+  .community-title > img {
+    width: 52px;
+    height: 52px;
+  }
+
+  .community-title > h3 {
+    font-size: 14px;
+  }
+
+  .join-btn {
+    padding: 12px 24px;
+    font-size: 12pxs;
+  }
+
+  .topic-header {
+    padding: 8px 32px;
+    gap: 12px;
+  }
+
+  .topic-header > h3 {
+    font-size: 16px;
+  }
+
+  .topic-content,
+  .topic-reply-container,
+  .short-topic-content {
+    padding: 24px 32px;
+    gap: 24px;
+  }
+
+  .topic-content > p,
+  .short-topic-content > p {
+    font-size: 12px;
+  }
+
+  .topic-asset > img {
+    max-width: 320px;
+  }
+
+  .action-container {
+    justify-content: flex-start;
+    width: 100%;
+    gap: 52px;
+  }
+
+  .topic-action {
+    width: 24px;
+    height: 24px;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .topic-action > p {
+    font-size: 12px;
+  }
+
+  .reply-header{
+    gap: 8px;
+  }
+
+  .reply-header > h3 {
+    font-size: 16px;
+  }
+
+  .topic-reply-container,
+  .topic-input > p {
+    font-size: 12px;
+  }
+
+  .reply-action-container {
+    gap: 24px;
+  }
+
+  .arrow-container > img{
+    width: 12px;
+    height: 12px;
+  }
+
+  .topic-input > img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .topic-input > p {
+    width: fit-content;
+  }
+
+  .comment-input {
+    width: 80%;
+    padding: 8px 32px;
+    border-radius: 10px;
+    border: 2px solid #828282;
+  }
+
+  .arrow-container > p {
+    font-size: 12px
+  }
+}
+
+@media only screen and (width <= 430px) {
+  .top-row > h2 {
+    font-size: 14px;
+  }
+
+  .community-top > div > a {
+    padding: 8px 24px;
+    font-size: 12px;
+  }
+
+  .community-top {
+    padding: 12px;
+  }
+}
