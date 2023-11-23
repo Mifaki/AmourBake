@@ -45,9 +45,9 @@
 }
 
 .bottom-item {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .topics-container {
@@ -151,4 +151,17 @@
   align-items: center;
   gap: 4px;
   font-size: 18px;
+}
+
+.see-all {
+  margin: auto;
+  max-width: 226px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 16px 42px;
+  border-radius: 99999px;
+  background: #714f3b;
+  box-shadow: 0px 4px 4px 0px #411a03;
+  cursor: pointer;
 }

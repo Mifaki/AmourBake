@@ -42,11 +42,11 @@ replyData = [
 ];
 
 document.addEventListener("DOMContentLoaded", function () {
-    function generateTopics() {
-      const topicsContainer = document.querySelector(".topics-container");
-  
-      replyData.forEach((topic) => {
-        const topicHtml = `
+  function generateTopics() {
+    const topicsContainer = document.querySelector(".topics-container");
+
+    replyData.forEach((topic) => {
+      const topicHtml = `
           <div class="topic-container">
             <div class="topic-header">
               <img src="${topic.photo}" alt="Community Photo" />
@@ -81,13 +81,25 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
           </div>
         `;
-  
-        topicsContainer.insertAdjacentHTML("beforeend", topicHtml);
-      });
-  
-      generateReplies(replyData);
-    }
-  
-    generateTopics();
-  });
-  
+
+      topicsContainer.insertAdjacentHTML("beforeend", topicHtml);
+    });
+  }
+
+  function generateSeeAllButton() {
+    const topicsContainer = document.querySelector(".topics-container");
+    const seeAllButtonHtml = `
+          <button class="see-all">Lihat Semua</button>
+        `;
+
+    topicsContainer.insertAdjacentHTML("beforeend", seeAllButtonHtml);
+
+    const seeAllButton = document.querySelector(".see-all");
+    seeAllButton.addEventListener("click", function () {
+      seeAllButton.style.display = "none";
+      generateTopics();
+    });
+  }
+  generateTopics();
+  generateSeeAllButton();
+});
