@@ -148,7 +148,8 @@ businessCourseData = [
   {
     id: 5,
     thumbnail: "../assets/business-course-5.png",
-    title: "Tren Aplikasi Pemesanan Online: Meningkatkan Penjualan di Dunia Bakery",
+    title:
+      "Tren Aplikasi Pemesanan Online: Meningkatkan Penjualan di Dunia Bakery",
     speaker: "Arnold Poernomo",
     date: "5 Februari 2024 - 3 Maret 2024",
     fee: 400.0,
@@ -160,23 +161,29 @@ function generateSeminarCards(data) {
   seminarCardContainer.innerHTML = "";
 
   data.forEach((seminar) => {
-    const seminarCardHtml = `
-    <div class="seminar-card" style="background-image: url('${seminar.thumbnail}');">
-          <div class="card-place text-sb">
-            <p>${seminar.place}</p>
-          </div>
-          <div class="card-bottom">
-            <div class="card-detail">
-              <h3>${seminar.title}</h3>
-              <p class="text-sb">bersama ${seminar.speaker}</p>
-              <p>${seminar.fee}</p>
-            </div>
-            <a href="" class="text-b">Daftar</a>
-          </div>
-        </div>
-      `;
+    const seminarCard = document.createElement("div");
+    seminarCard.classList.add("seminar-card");
+    seminarCard.style.backgroundImage = `url('${seminar.thumbnail}')`;
 
-    seminarCardContainer.insertAdjacentHTML("beforeend", seminarCardHtml);
+    seminarCard.innerHTML = `
+      <div class="card-place text-sb">
+        <p>${seminar.place}</p>
+      </div>
+      <div class="card-bottom">
+        <div class="card-detail">
+          <h3>${seminar.title}</h3>
+          <p class="text-sb">bersama ${seminar.speaker}</p>
+          <p>${seminar.fee}</p>
+        </div>
+        <a href="course-detail.html" class="text-b">Daftar</a>
+      </div>
+    `;
+
+    seminarCard.addEventListener("click", function () {
+      window.location.href = "course-detail.html"; // Redirect to course-detail.html
+    });
+
+    seminarCardContainer.appendChild(seminarCard);
   });
 }
 

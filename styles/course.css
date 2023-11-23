@@ -18,6 +18,7 @@ section > h1 {
 }
 
 .option-container > img {
+  width: 45%;
   box-shadow: 5px 5px 20px #000;
   cursor: pointer;
   border-radius: 32px;
@@ -44,9 +45,9 @@ section > h1 {
   background: rgba(255, 255, 255, 0.7);
   box-shadow: 4px 7px 4px 0px rgba(0, 0, 0, 0.25) inset;
 }
- 
+
 #recBusinessContainer {
-    display: none;
+  display: none;
 }
 
 .recomended-container {
@@ -60,8 +61,13 @@ section > h1 {
   position: relative;
 }
 
-.recomended-container > div > img {
+.rec-img {
+  width: 100%;
+  max-height: 500px;
+  min-height: 240px;
+  object-fit: cover;
   z-index: -1;
+  border-radius: 32px;
 }
 
 .recomended-text-container {
@@ -73,6 +79,7 @@ section > h1 {
   top: 0;
   left: 0;
   z-index: 2;
+  width: 100%;
   height: 100%;
   color: white;
 }
@@ -135,6 +142,7 @@ section > h1 {
   max-width: 70%;
   min-height: 480px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
 }
 
 .card-place {
@@ -189,11 +197,124 @@ section > h1 {
   width: 100%;
   border-radius: 32px;
   background-color: #ac987a;
-  color: #411A03;
+  color: #411a03;
   padding: 12px 32px 12px 8px;
 }
 
+.course-card > img {
+  width: 120px;
+  height: 120px;
+  margin: auto;
+}
+
 .course-card-body {
+  width: 100%;
+  min-height: fill-container;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 24px 0;
+}
+
+.course-card-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.course-card-body > div > h3 {
+  text-align: center;
+}
+
+.card-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 42px;
+  background-color: #411a03;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 99999px;
+  margin-top: 12px;
+}
+
+@media only screen and (width <= 1240px) {
+  .recomended-card-container {
+    min-width: 100%;
+  }
+
+  .rec-img {
+    max-height: 240px;
+  }
+
+  .recomended-container {
+    flex-direction: column;
+  }
+
+  .column-recomended {
+    width: 100%;
+  }
+}
+
+@media only screen and (width <= 700px) {
+  .option-container {
+    flex-direction: column;
+  }
+
+  .option-container > img {
+    width: 100%;
+    border-radius: 42px;
+  }
+}
+
+@media only screen and (width <= 600px) {
+  .recomended-header > div > h2 {
+    font-size: 16px;
+  }
+
+  .recomended-header > div > h3 {
+    font-size: 14px;
+  }
+
+  .recomended-header > div > p {
+    font-size: 14px;
+  }
+
+  .price-container > h2 {
+    font-size: 14px;
+  }
+
+  .price-container > a {
+    padding: 12px 32px;
+    font-size: 12px;
+  }
+
+  .seminar-card {
+    min-width: 50%;
+    max-width: 50%;
+    min-height: 400px;
+  }
+
+  .card-detail {
+    width: 100%;
+  }
+
+  .card-bottom > a {
+    display: none;
+  }
+
+  .card-detail > h3 {
+    font-size: 14px;
+  }
+
+  .card-detail > p {
+    font-size: 12px;
+  }
+
+  .course-card-body {
     width: 100%;
     min-height: fill-container;
     display: flex;
@@ -201,27 +322,31 @@ section > h1 {
     justify-content: space-between;
     gap: 8px;
     padding: 24px 0;
-}
+  }
 
-.course-card-text {
+  .course-card-text {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
+    gap: 12px;
+  }
 
-.course-card-body > div > h3 {
-    text-align: center;
-}
+  .course-card-body > div > h3 {
+    font-size: 14px;
+  }
 
-.card-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 12px 42px;
-    background-color: #411A03;
-    color: #fff;
-    font-size: 24px;
-    border-radius: 99999px;
-    margin-top: 12px;
+  .course-card-text > div > h3,
+  .course-card-text > div > h4 {
+    font-size: 14px;
+  }
+
+  .course-card-text > div > p {
+    font-size: 14px;
+  }
+
+  .card-btn {
+    padding: 12px 32px;
+    font-size: 14px;
+  }
 }
