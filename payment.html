@@ -3,15 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/header-footer.css" />
-    <link rel="stylesheet" href="./styles/course-detail.css" />
+    <link rel="stylesheet" href="./styles/payment.css" />
     <script src="./script/header.js" defer></script>
-    <script src="./script/course-detail.js" defer></script>
+    <script src="./script/payment.js" defer></script>
   </head>
   <body>
     <header>
@@ -51,7 +47,7 @@
         <a href="./index.html" class="nav-item text-b">Home</a>
         <a href="./about.html" class="nav-item">About Us</a>
         <a href="./tutorial.html" class="nav-item">Tutorial</a>
-        <a href="./index.html" class="nav-item text-b">Course</a>
+        <a href="./index.html" class="nav-item">Course</a>
         <a href="./community.html" class="nav-item">Community</a>
       </div>
     </header>
@@ -82,81 +78,124 @@
         </div>
         <img src="./assets/course-speaker.png" alt="Course Speaker" />
       </section>
-      <section class="main-container detail-gap">
-        <div class="course-detail-top">
-          <div class="top-left">
-            <h2>Apa yang akan Anda dapatkan?</h2>
-            <ul class="list-container">
-              <li>Mengetahui bagaimana strategi bisnis dalam dunia bakery</li>
-              <li>Mengetahui bagaimana strategi bisnis dalam pemasaran</li>
-            </ul>
-            <br />
-            <ul class="list-container">
-              <li>Sertifikat resmi dari Amourbake dan pihak penyelenggara</li>
-              <li>Mengetahui bagaimana strategi bisnis dalam pemasaran</li>
-            </ul>
-          </div>
-          <div class="top-right" id="topRight">
-            <h2>Daftar Sekarang!</h2>
-            <div class="price-container">
-              <h3 class="text-b">Harga</h3>
+      <section class="main-container">
+        <h2>Pembayaran</h2>
+        <div class="payment-container">
+          <div class="payment-top">
+            <p class="text-b">
+              Baking Course - Perjalanan Rasa: Mengenal Keindahan Cake dari
+              Dasar hingga Profesional
+            </p>
+            <div class="divider"></div>
+            <div>
+              <p class="text-b">Total Pembayaran</p>
               <p>Rp. 400.000</p>
             </div>
-            <div class="divider"></div>
-            <a href="payment.html" class="buy-btn text-b">Daftar</a>
           </div>
-        </div>
-        <div class="detail-body">
-          <div>
-            <h2>Detail Course</h2>
-            <p>
-              Dalam Course "Perjalanan Rasa: Mengenal Keindahan Cake dari Dasar
-              hingga Profesional," kami mengajak Anda untuk menjelajahi keunikan
-              dunia cake melalui empat pertemuan online yang penuh inspirasi.
-              Bergabunglah dengan kami dalam perjalanan kuliner ini untuk
-              mengembangkan keterampilan Anda dan menemukan rahasia di balik
-              kreasi cake yang memikat. Mari kita eksplorasi bersama dan
-              wujudkan keahlian baru!
-            </p>
-          </div>
-          <div>
-            <p>Waktu dan Lokasi</p>
-            <ul class="body-list">
-              <li>Tanggal : 14 Desember 2023 - 04 Januari 2024</li>
-              <li>Hari : Setiap Kamis</li>
-              <li>Jam : 18.00 - 20.00 WIB</li>
-              <li>Lokasi : Online (via zoom)</li>
-              <li>Tanggal : 14 Desember 2023 - 04 Januari 2024</li>
-            </ul>
-          </div>
-          <div>
-            <p>Rangkaian Pertemuan:</p>
-            <ul class="body-list">
-              <li>
-                Pertemuan 1 (14 Desember 2023) : Mengenal Dunia Cake dan Teknik
-                Dasar
-              </li>
-              <li>
-                Pertemuan 2 (21 Desember 2023) : Menguasai Resep Klasik dan
-                Varian Kreatif
-              </li>
-              <li>
-                Pertemuan 3 (28 Desember 2023) : Cake Kontemporer dan Presentasi
-                Estetika
-              </li>
-              <li>
-                Pertemuan 4 (04 Januari 2024) : Profesionalisme dalam Dunia Cake
-              </li>
-            </ul>
-          </div>
-          <div>
-            <p>Catatan</p>
-            <ul class="note">
-              <li>
-                *Jika sudah melakukan pemabayaran, link zoom akan dikirimkan
-                melalui email yang terdaftar pada website Amourbake.
-              </li>
-            </ul>
+          <div class="method-container">
+            <h2>Metode Pembayaran</h2>
+            <div class="payment-body">
+              <div class="credit-container">
+                <div class="label-container text-b">
+                  <input
+                    type="radio"
+                    id="article"
+                    name="filter"
+                    value="article"
+                    checked
+                  />
+                  <label for="article"> Katru Credit dan Debit </label>
+                </div>
+                <form class="credit-body">
+                  <div class="form-text">
+                    <label for="fullName"> Nama Pemilik Kartu </label>
+                    <input type="text" id="fullName" name="fullName" />
+                  </div>
+                  <div class="form-text">
+                    <label for="creditNumber"> Nomor Kartu </label>
+                    <input type="text" id="creditNumber" name="creditNumber" />
+                  </div>
+                  <div class="form-row">
+                    <div class="form-date">
+                      <label>End Date</label>
+                      <div class="date-container">
+                        <select name="month" id="monthSelect">
+                          <!-- Option Automatically Generated -->
+                        </select>
+                        <select name="month" id="yearSelect">
+                          <!-- Option Automatically Generated -->
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-text">
+                      <label for="cvv"> CVV </label>
+                      <input type="text" id="cvv" name="cvv" />
+                    </div>
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" id="policy" name="policy" />
+                    <label for="policy">
+                      Saya sudah menyetujui terms and conditions
+                    </label>
+                  </div>
+                  <a href="index.html" class="pay-btn">Bayar</a>
+                </form>
+              </div>
+              <div class="label-container text-b">
+                <input
+                  type="radio"
+                  id="article"
+                  name="filter"
+                  value="article"
+                />
+                <label for="article">Indomaret</label>
+              </div>
+              <div class="label-container text-b">
+                <input
+                  type="radio"
+                  id="article"
+                  name="filter"
+                  value="article"
+                />
+                <label for="article">Alfamart</label>
+              </div>
+              <div class="label-container text-b">
+                <input
+                  type="radio"
+                  id="article"
+                  name="filter"
+                  value="article"
+                />
+                <label for="article">ATM</label>
+              </div>
+              <div class="label-container text-b">
+                <input
+                  type="radio"
+                  id="article"
+                  name="filter"
+                  value="article"
+                />
+                <label for="article">ShopeePay</label>
+              </div>
+              <div class="label-container text-b">
+                <input
+                  type="radio"
+                  id="article"
+                  name="filter"
+                  value="article"
+                />
+                <label for="article">OVO</label>
+              </div>
+              <div class="label-container text-b">
+                <input
+                  type="radio"
+                  id="article"
+                  name="filter"
+                  value="article"
+                />
+                <label for="article">DANA</label>
+              </div>
+            </div>
           </div>
         </div>
       </section>
