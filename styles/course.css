@@ -113,9 +113,9 @@ section > h1 {
 }
 
 .price-container > a {
-  padding: 12px 56px;
+  padding: 12px 32px;
   color: #411a03;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   background-color: white;
   border-radius: 9999px;
@@ -138,9 +138,9 @@ section > h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-width: 70%;
-  max-width: 70%;
-  min-height: 480px;
+  min-width: 50%;
+  max-width: 50%;
+  min-height: 420px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.35);
   cursor: pointer;
 }
@@ -149,7 +149,7 @@ section > h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-height: 74px;
+  max-height: 52px;
   margin-left: auto;
   border-radius: 0px 0px 0px 40px;
   background: #fefefe;
@@ -164,22 +164,30 @@ section > h1 {
 }
 
 .card-detail {
-  width: 70%;
+  width: 75%;
   display: flex;
   flex-direction: column;
   gap: 2px;
   color: #411a03;
   background-color: #fff;
   border-radius: 0px 40px 0px 0px;
-  padding: 24px 28px;
+  padding: 24px;
+}
+
+.card-detail > h3 {
+  font-size: 16px;
+}
+
+.card-detail > p {
+  font-size: 14px;
 }
 
 .card-bottom > a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
-  padding: 12px 42px;
+  margin-right: 24px;
+  padding: 12px 32px;
   background-color: #fff;
   color: #411a03;
   border-radius: 99999px;
@@ -233,10 +241,10 @@ section > h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 12px 42px;
+  padding: 12px 32px;
   background-color: #411a03;
   color: #fff;
-  font-size: 18px;
+  font-size: 14px;
   border-radius: 99999px;
   margin-top: 12px;
 }

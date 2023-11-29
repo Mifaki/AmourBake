@@ -83,8 +83,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   communityFilter.addEventListener("change", function () {
     let selectedValue = communityFilter.value;
-
     if (selectedValue === "galery") {
+      console.log('p');
       galerySection.style.display = "block";
       forumSection.style.display = "none";
     } else if (selectedValue === "forum") {
